@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013-2015 OpenWrt.org
+# Copyright (C) 2013-2022 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,14 +8,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=accel-ppp
-PKG_RELEASE:=1
-PKG_VERSION:=1.11.2
+PKG_RELEASE:=2
+PKG_VERSION:=master
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=https://github.com/xebd/accel-ppp.git
-PKG_SOURCE_VERSION:=04aaeb9bb66c7150bcfea7aadf48663624676316
+PKG_SOURCE_URL=https://github.com/meferspb/accel-ppp.git
+PKG_SOURCE_VERSION:=38d96b8e20608fb743d543fe3f08ad4b9d1dcd66
 
-PKG_MAINTAINER:=Alex Paraskeva <sim201010@gmail.com>
+PKG_MAINTAINER:=Viktor Krasnikov <vmkrasnikov1981@gmail.com>
 PKG_LICENSE:=GPL-2.0
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
@@ -29,7 +29,7 @@ include $(INCLUDE_DIR)/cmake.mk
 define Package/accel-ppp
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=accel-ppp VPN server
+  TITLE:=accel-ppp IPoE VPN server
   DEPENDS:=+libpcre +libopenssl +libpthread +librt +libatomic
 endef
 
