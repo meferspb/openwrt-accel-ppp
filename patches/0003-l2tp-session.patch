@@ -1,7 +1,7 @@
-Index: accel-ppp-1.11.2/accel-pppd/ctrl/l2tp/l2tp.c
+Index: accel-ppp-master/accel-pppd/ctrl/l2tp/l2tp.c
 ===================================================================
---- accel-ppp-1.11.2.orig/accel-pppd/ctrl/l2tp/l2tp.c
-+++ accel-ppp-1.11.2/accel-pppd/ctrl/l2tp/l2tp.c
+--- accel-ppp-master.orig/accel-pppd/ctrl/l2tp/l2tp.c
++++ accel-ppp-master/accel-pppd/ctrl/l2tp/l2tp.c
 @@ -843,7 +843,7 @@ static void l2tp_tunnel_free_sessions(st
  	void *sessions = conn->sessions;
  
