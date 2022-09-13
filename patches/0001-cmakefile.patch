@@ -1,7 +1,7 @@
-Index: accel-ppp-1.12.0/CMakeLists.txt
+Index: accel-ppp-master/CMakeLists.txt
 ===================================================================
---- accel-ppp-1.12.0.orig/CMakeLists.txt
-+++ accel-ppp-1.12.0/CMakeLists.txt
+--- accel-ppp-master.orig/CMakeLists.txt
++++ accel-ppp-master/CMakeLists.txt
 @@ -2,10 +2,6 @@ cmake_minimum_required(VERSION 2.6)
  cmake_policy(SET CMP0005 NEW)
  cmake_policy(SET CMP0003 OLD)
@@ -13,10 +13,10 @@ Index: accel-ppp-1.12.0/CMakeLists.txt
  project(accel-ppp C)
  
  include(cmake/cpack.cmake)
-Index: accel-ppp-1.12.0/accel-pppd/CMakeLists.txt
+Index: accel-ppp-master/accel-pppd/CMakeLists.txt
 ===================================================================
---- accel-ppp-1.12.0.orig/accel-pppd/CMakeLists.txt
-+++ accel-ppp-1.12.0/accel-pppd/CMakeLists.txt
+--- accel-ppp-master.orig/accel-pppd/CMakeLists.txt
++++ accel-ppp-master/accel-pppd/CMakeLists.txt
 @@ -125,10 +125,3 @@ INSTALL(TARGETS accel-pppd
  
  INSTALL(FILES accel-ppp.conf.5 DESTINATION share/man/man5)
